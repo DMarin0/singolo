@@ -82,14 +82,16 @@ p {
 
 /* Header */
 .header {
+  height: 95px;
+
+  background-color: #2d303a;
+  border-bottom: 6px solid #323746;
+}
+.header__inner {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  height: 95px;
-
-  padding: 0 40px;
-  background-color: #2d303a;
-  border-bottom: 6px solid #323746;
+  padding: 28px 40px;
 }
 .header__title {
   font-family: "Lato-Bold";
