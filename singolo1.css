@@ -238,10 +238,11 @@ p {
 .services__discriptions {
   margin-bottom: 47px;
 
-  font-family: "Lato-Regular";
+  font-family: "Lato-Light";
   font-size: 18px;
+  font-weight: 300;
   line-height: 30px;
-  letter-spacing: -0.22px;
+  letter-spacing: 0.01px;
   text-align: justify;
 
   color: #767e9e;
@@ -280,9 +281,9 @@ p {
 .content__text {
   font-family: "Lato-Regular";
   font-size: 12px;
-  line-height: 21px;
+  line-height: 22px;
   text-align: justify;
+  letter-spacing: 0.004em;
 
   color: #767e9e;
-  hyphens: auto;
 }
