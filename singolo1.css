@@ -121,7 +121,7 @@ p {
   text-transform: uppercase;
   letter-spacing: 0.007em;
 }
-.nav__link:first-child {
+.nav__link--active {
   color: #f06c64;
 }
 .nav__link:not(:nth-child(1))::before {
