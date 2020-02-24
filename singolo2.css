@@ -73,7 +73,7 @@ img {
   display: block;
 }
 p {
-  margin: 0 0 1rem;
+  margin: 0;
 }
 *,
 *:before,
@@ -81,209 +81,61 @@ p {
   box-sizing: border-box;
 }
 
-/* Header */
-.header {
-  height: 95px;
-
+.portfolio__container {
+  padding: 67px 40px 48px 40px;
   background-color: #2d303a;
   border-bottom: 6px solid #323746;
 }
-.header__inner {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  padding: 28px 40px;
-}
-.header__title {
-  font-family: "Lato-Bold";
-  font-size: 25px;
-  font-weight: 700;
-  color: #ffffff;
-  text-transform: uppercase;
-  letter-spacing: -0.017em;
-}
-.header__title span {
-  color: #f06c64;
-}
-.nav {
-  display: flex;
-}
-.nav__link {
-  position: relative;
-  margin-left: 28px;
-  padding-top: 11px;
-  font-size: 12px;
-  line-height: 6px;
-  font-family: "Lato-Bold";
-  font-weight: 700;
-  color: #ffffff;
-  text-decoration: none;
-  text-transform: uppercase;
-  letter-spacing: 0.007em;
-}
-.nav__link--active {
-  color: #f06c64;
-}
-.nav__link:not(:nth-child(1))::before {
-  position: absolute;
-  bottom: 0;
-  left: -15px;
-  content: "";
-  width: 4px;
-  height: 4px;
-  background-color: #3a3d4c;
-  border-radius: 50%;
-}
-.nav__link::after {
-  content: "";
-  width: 0;
-  height: 2px;
-  background-color: #f06c64;
-  position: absolute;
-  bottom: -7px;
-  left: 0;
-  z-index: 1;
-  transition: width 0.2s linear;
-}
-.nav__link:hover::after {
-  width: 100%;
-}
-
-/* Slider */
-
-.slider {
-  height: 600px;
-  background-color: #f06c64;
-  border-bottom: 6px solid #ea676b;
-}
-.slider__inner {
-  position: relative;
-  max-width: 940px;
-  margin: 0 auto;
-}
-.slider__item {
-  position: absolute;
-}
-.slider__item--left {
-  top: 53px;
-  left: 72px;
-}
-.slider__item--right {
-  top: 174px;
-  right: 71px;
-}
-.slider__arrows {
-  min-height: 600px;
-  position: relative;
-}
-
-.arrow {
-  display: inline-block;
-  position: absolute;
-  font-size: 0;
-  color: transparent;
-  border: 0;
-  background: none;
-  top: 48%;
-  z-index: 1;
-  transform: translateY(-50%);
-  cursor: pointer;
-}
-.arrow:focus {
-  outline: 0;
-}
-.arrow:after {
-  content: "";
-  display: block;
-  width: 18px;
-  height: 18px;
-  border-top: 5px solid #ca4549;
-  border-right: 5px solid #ca4549;
-  border-radius: 2px;
-  transition: all 0.2s linear;
-}
-.arrow:hover:after {
-  border-color: #ffffff;
-}
-
-.arrow--prev {
-  left: 0;
-  transform: rotate(220deg);
-}
-.arrow--next {
-  right: -5px;
-  transform: rotate(45deg);
-}
-
-/* Services */
-
-.services {
-  padding-top: 67px;
-  background-color: #f2f2f2;
-}
-.services__inner {
-  max-width: 940px;
-  margin: 0 auto;
-}
-.services__title {
-  margin-bottom: 26px;
-
-  font-family: "Lato-Black";
-  font-size: 30px;
-  font-weight: 900;
-  line-height: 21px;
-  letter-spacing: -0.21px;
-  color: #666d89;
-}
-.services__discriptions {
-  margin-bottom: 47px;
-
-  font-family: "Lato-Light";
-  font-size: 18px;
-  font-weight: 300;
-  line-height: 30px;
-  letter-spacing: 0.01px;
-  text-align: justify;
-
-  color: #767e9e;
-}
-.layout-3-column {
+.portfolio__content {
   display: flex;
   flex-wrap: wrap;
   justify-content: space-between;
 }
-.sertices__item {
-  position: relative;
-  margin-bottom: 30px;
-  padding-left: 79px;
-
-  width: 33%;
-  max-width: 299px;
-  max-height: 93px;
-}
-.services__icon {
-  position: absolute;
-  top: 0;
-  left: 0;
-  z-index: 1;
-}
-
-.content__title {
-  margin-bottom: 15px;
-
-  font-family: "Lato-Black";
-  font-size: 18px;
-  font-weight: 900;
-  line-height: 9px;
-  letter-spacing: -0.005em;
+.portfolio__title {
   color: #666d89;
+  font-family: "Lato-Black";
+  font-size: 30px;
+  font-weight: 400;
+  line-height: 22px;
+  letter-spacing: -0.24px;
+  margin-bottom: 25px;
 }
-.content__text {
+.portfolio__description {
+  color: #676e8a;
+  font-family: "Lato-Light";
+  font-size: 18px;
+  font-weight: 300;
+  line-height: 30px;
+}
+.portfolio__tags {
+  padding-top: 10px;
+  padding-bottom: 19px;
+}
+.tag {
+  padding: 2px 7px 3px;
+  margin-right: 4.5px;
+  color: #767e9e;
   font-family: "Lato-Regular";
   font-size: 12px;
+  font-weight: 400;
   line-height: 22px;
-  text-align: justify;
-  letter-spacing: 0.004em;
-
-  color: #767e9e;
+  letter-spacing: 0.036px;
+  border: 1px solid #666d89;
+  border-radius: 4px;
+  transition: all 0.2s linear;
+}
+.tag:hover {
+  color: #dedede;
+  border-color: #dedede;
+}
+.tag--active {
+  color: #dedede;
+  border-color: #dedede;
+}
+.portfolio__content {
+  max-height: 621px;
+  overflow: hidden;
+}
+.portfolio__content > * {
+  margin-bottom: 20px;
 }
